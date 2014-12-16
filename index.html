@@ -5,9 +5,39 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="fixed">
-    <h1>alfredo armanini</h1>
+<section id="welcome">
+
+    	<p>alfredo armanini</p>
     C++/C#/Python developer
-</div>
+    <nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Hire Me</a></li>
+		</ul>
+	</nav>
+
+</section>
+
+<section id="screen2"></section>
+<section id="screen3"></section>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+   $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 70;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('fixed');
+			 }
+			 else {
+				 $('nav').removeClass('fixed');
+			 }
+		});
+	});
+</script>
+
 </body>
 </html>
