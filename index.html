@@ -2,38 +2,42 @@
 <html>
 <head>
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <section id="welcome">
 
+<div id="text_info">
     	<p>alfredo armanini</p>
     C++/C#/Python developer
+</div>
     <nav>
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Hire Me</a></li>
+			<li><a href="https://github.com/phingage" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+			<li><a href="https://linkedin.com/in/armanini" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+			<li><a href="mailto:alfredo@armanini.io"><i class="fa fa-envelope-o fa-2x"></i></a></li>
 		</ul>
 	</nav>
 
 </section>
 
-<section id="screen2"></section>
-<section id="screen3"></section>
+<!-- <section id="screen2"></section>
+<section id="screen3"></section> -->
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 <script>
    $(document).ready(function(){
 	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 70;
+	   var navHeight = $( window ).height() - 270;
 			 if ($(window).scrollTop() > navHeight) {
 				 $('nav').addClass('fixed');
+				 $('#welcome').addClass('welconefixed');
 			 }
 			 else {
 				 $('nav').removeClass('fixed');
+				 $('#welcome').removeClass('welconefixed');
 			 }
 		});
 	});

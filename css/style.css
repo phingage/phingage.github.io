@@ -4,8 +4,16 @@ a {text-decoration: none;}
 
 .fixed {
 	position: fixed;
-	top: 0;
+	top: 200px;
 	height: 70px;
+	z-index: 1;
+}
+
+.welconefixed {
+	position: fixed;
+	top: 0px;
+	height: 200px;
+	width: 100%;
 	z-index: 1;
 }
 
@@ -41,10 +49,18 @@ section {
 /* Screens Settings */
 #welcome {
 	background: url("../img/bg1.jpg") no-repeat;
+	background-attachment: fixed;
 }
 
 #welcome p {
-	padding-top: 200px;
+	
+}
+
+#text_info {
+	position: fixed;
+	top: 130px;
+	text-align: center;
+	width: 100%;
 }
 
 #screen2 {
